@@ -1,0 +1,113 @@
+# Python 通用
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# uv 专属（重点）
+.venv/
+.uv/
+uv.lock.bak
+# uv 会自动生成 uv.lock，一般建议提交 uv.lock，不要注释这行
+# !uv.lock
+
+# LangGraph / LangChain 缓存
+.langgraph/
+langgraph_cache/
+.langchain/
+langsmith.db*
+*.langsmith
+
+# 向量数据库本地存储（Milvus、Chroma、FAISS、Qdrant 本地文件）
+chroma_db/
+*.faiss
+*.pkl
+qdrant_storage/
+milvus_data/
+pgdata/
+
+# 模型权重、本地大模型文件
+models/
+*.bin
+*.safetensors
+*.gguf
+*.ggml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb
+# 如果想保留 notebook 但不保存输出，取消下面一行
+# *.ipynb filter=nbstripout
+
+# 日志
+logs/
+*.log
+*.log.*
+
+# 环境变量、密钥（非常重要！）
+.env
+.env.local
+.env.dev
+.env.prod
+.env*.bak
+secrets.json
+api_keys.yaml
+
+# 临时文件、dump
+tmp/
+temp/
+*.tmp
+*.bak
+*.dump
+*.sqlite
+*.db
+*.sqlite3
+
+# pytest / 测试
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.benchmarks/
+
+# mypy / ruff
+.mypy_cache/
+.ruff_cache/
+
+# IDE 编辑器
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# LangGraph 服务临时数据
+langgraph_studio/
+langgraph_server_data/
